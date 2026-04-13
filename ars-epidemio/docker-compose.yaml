@@ -17,7 +17,7 @@ x-airflow-common: &airflow-common
     - ./dags:/opt/airflow/dags
     - ./scripts:/opt/airflow/scripts
     - airflow-logs:/opt/airflow/logs
-    - ars-data:/data/ars
+    - ./data/ars:/data/ars
   user: "${AIRFLOW_UID:-50000}:0"
   depends_on: &airflow-common-depends-on
     redis:
@@ -155,4 +155,3 @@ volumes:
   postgres-db-volume:
   postgres-ars-volume:
   airflow-logs:
-  ars-data:
