@@ -133,10 +133,12 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
+DROP TRIGGER IF EXISTS update_donnees_hbd_updated_at ON donnees_hebdomadaires;
 CREATE TRIGGER update_donnees_hbd_updated_at
     BEFORE UPDATE ON donnees_hebdomadaires
     FOR EACH ROW EXECUTE FUNCTION update_updated_at_column();
 
+DROP TRIGGER IF EXISTS update_indicateurs_updated_at ON indicateurs_epidemiques;
 CREATE TRIGGER update_indicateurs_updated_at
     BEFORE UPDATE ON indicateurs_epidemiques
     FOR EACH ROW EXECUTE FUNCTION update_updated_at_column();

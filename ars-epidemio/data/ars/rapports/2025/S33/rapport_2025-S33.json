@@ -1,0 +1,40 @@
+{
+  "semaine": "2025-S33",
+  "region": "Occitanie",
+  "code_region": "76",
+  "date_generation": "2026-04-13T14:14:43.470442",
+  "situation_globale": "NORMAL",
+  "nb_syndromes_surveilles": 2,
+  "syndromes_en_urgence": [],
+  "syndromes_en_alerte": [],
+  "indicateurs": [
+    {
+      "syndrome": "GRIPPE",
+      "valeur_ias": 0.0,
+      "z_score": null,
+      "r0_estime": null,
+      "statut": "NORMAL",
+      "statut_ias": "NORMAL",
+      "statut_zscore": "NORMAL",
+      "nb_saisons_reference": 0,
+      "commentaire": "IAS=NORMAL, Z=NORMAL"
+    },
+    {
+      "syndrome": "GEA",
+      "valeur_ias": 0.0,
+      "z_score": null,
+      "r0_estime": null,
+      "statut": "NORMAL",
+      "statut_ias": "NORMAL",
+      "statut_zscore": "NORMAL",
+      "nb_saisons_reference": 0,
+      "commentaire": "IAS=NORMAL, Z=NORMAL"
+    }
+  ],
+  "recommandations": [
+    "Maintien de la surveillance standard",
+    "Prochain point épidémiologique dans 7 jours"
+  ],
+  "genere_par": "ars_epidemio_dag v1.0",
+  "pipeline_version": "2.8"
+}
