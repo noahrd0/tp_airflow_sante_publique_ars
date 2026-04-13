@@ -160,5 +160,4 @@ verifier_connexions → init_base_donnees → collecter_donnees_sursaud → arch
 |------------|----------|
 | `PermissionError` sur `/data/ars/raw/` dans le container | Passage en bind mount avec `chmod -R 777 ./data/ars` sur l'hôte |
 | `CREATE TRIGGER` échoue si le trigger existe déjà (pas de `IF NOT EXISTS` en PostgreSQL) | Ajout de `DROP TRIGGER IF EXISTS` avant chaque `CREATE TRIGGER` |
-| Colonne `code_dept` référencée dans les requêtes SQL mais absente du schéma | Adaptation des requêtes pour travailler au niveau régional (par syndrome uniquement) conformément au schéma |
 | Le scheduler ne recrée pas les DAG runs après modification du `start_date` | Suppression des anciens DAG runs en base, restart du scheduler, puis unpause du DAG |
